@@ -1,0 +1,192 @@
+// ===========================================
+// footer
+// ===========================================
+/* #footer
+====================================== */
+#footer {
+	background-color: map-get($colors, main);
+	color: map-get($colors, off-white);
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+
+.search-form {
+	max-width: 467px;
+	margin: 0 auto;
+	position: relative;
+	@include mq-down('s') {
+		width: 332px;
+	}
+}
+
+.search-box {
+	background-color: transparent;
+	border: 1px solid #979797 !important;
+	border-radius: 3px;
+	display: block;
+	padding: 1.2em !important;
+	@include font(14);
+	@include mq-up('s') {
+		@include font(20);
+		padding: .7em !important;
+	}
+}
+
+.search-btn {
+	display: block;
+	background-color: map-get($colors, sub);
+	color: #242e39;
+	@include font(17);
+	font-weight: bold;
+	width: 30%;
+	position: absolute;
+	right: .5em;
+	top: 15%;
+}
+
+.other-information {
+	padding-top: 45px;
+	padding-bottom: 55px;
+	p {
+		text-align: center;
+		@include font(14);
+	}
+}
+.footer-tit {
+	@include font(30);
+	font-weight: bold;
+	color: map-get($colors, off-white);
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.sns-icon-wrapper {
+	margin-top: 12px;
+	a {
+		display: block;
+		i {
+			display: block;
+			color: map-get($colors, off-white);
+			@include font(25);
+			padding: .3em;
+		}
+	}
+
+}
+
+/* footer-logo
+====================================== */
+#footer-logo {
+}
+
+
+/* parts
+====================================== */
+/* pagetop
+-------------------------------------- */
+.pagetop {
+	@include font(10);
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 100;
+}
+
+/* footer-nav
+-------------------------------------- */
+.footer-nav-01{
+	margin-bottom: 42px;
+	.footer-nav-block {
+		span {
+			@include font(14);
+			font-weight: bold;
+		}
+	}
+}
+
+.footer-nav-items {
+	a {
+		display: block;
+		color: map-get($colors, off-white);
+		@include font(12);
+	}
+}
+
+.footer-nav-02 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	flex-wrap: wrap;
+	@include mq-up('m') {
+		border-top: 1px solid map-get($colors, off-white);
+		border-bottom: 1px solid map-get($colors, off-white);
+	}
+	li {
+		@include mq-down('m') {
+			margin-top: 1em;
+			&:nth-child(2) > a {
+				border-left: none;
+				padding-left: 0;
+			}
+		}
+		+ li > a {
+			border-left: 1px solid map-get($colors, off-white);
+		}
+	a {
+		color: map-get($colors, off-white);
+		@include font(12);
+		padding-left: 8px;
+		padding-right: 8px;
+		line-height: 1;
+		display: block;
+		white-space: nowrap;
+		}
+	}
+	.japan {
+		@include mq-down('m') {
+			width: 100%;
+		}
+		a {
+			background: url(../img/icon_world_map.svg) no-repeat;
+			padding-left: 70px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			@include mq-up('m') {
+				padding-left: 50px;
+				padding-bottom: 10px;
+			}
+		}
+	}
+}
+
+/* .copyright
+--------------------------------- */
+.copyright-wrapper {
+	margin-top: 10px;
+}
+.copyright {
+	display: block;
+	@include font(12);
+	@include mq-up('m') {
+		padding-top: .7em;
+		margin-left: 2em;
+	}
+}
+
+/* #fixed-btn
+--------------------------------- */
+#fixed-btn {
+	position:fixed;
+	bottom: 45%;
+	right: 0;
+	z-index:999;
+	background-color: #d2d2d2;
+	padding: .7em .1em;
+	border-radius: 3px;
+	a {
+		display: block;
+		@include font(15);
+		writing-mode: vertical-rl;
+		text-orientation: sideways;
+		font-weight: 300;
+	}
+}

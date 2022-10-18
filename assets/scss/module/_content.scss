@@ -1,0 +1,185 @@
+// ===========================================
+// page
+// ===========================================
+
+body {
+	background-color: map-get($colors, main);
+
+}
+/* section
+====================================== */
+/* parts
+--------------------------------- */
+.yellow-label {
+	@media screen and (min-width: 1700px) {
+		margin-right: 40px;
+		margin-left: 40px;
+	}
+	@include mq-up('m') {
+		border-right: 20px solid map-get($colors, sub);
+	}
+}
+
+// ===========================================
+// Common generic class 全ページ共通汎用クラス
+// ===========================================
+/* title タイトル
+--------------------------------- */
+
+// common title
+.com-tit-01 {
+	@include font(20);
+	font-weight: bold;
+	@include mq-up('m') {
+		@include font(22);
+	}
+	@include mq-up('l') {
+		@include font(24);
+	}
+}
+
+.com-tit-02 {
+	margin-top: 0;
+	@include font(32);
+	@include mq-up('s') {
+		@include font(36);
+	}
+	@include mq-up('m') {
+		@include font(40);
+	}
+	.sub-tit {
+		display: inline-block;
+		line-height: 1.2;
+		@include font(16);
+		font-weight: bold;
+		margin-bottom: 13px;
+		@include mq-up('l') {
+			@include font(18);
+		}
+	}
+	&.navy {
+		color: map-get($colors, main);
+	}
+	.small {
+		@include font(28);
+		vertical-align: top;
+	}
+}
+
+.com-tit-03 {
+
+}
+
+.com-tit-04 {
+}
+
+.com-tit-05 {
+}
+
+
+
+.com-note-01 {
+	@include font(12);
+	font-weight: 300;
+	line-height: 1.3;
+	margin-top: 1.3em;
+}
+
+
+/* text テキスト
+--------------------------------- */
+.com-text-01 {
+	@include font(16);
+	font-weight: 300;
+	line-height: 1.2;
+	@include mq-up('m') {
+		@include font(18);
+	}
+	&.large {
+		@include mq-up('s') {
+			@include font(18);
+		}
+	}
+	&.navy {
+		color: map-get($colors, main);
+	}
+	.bold {
+		font-weight: bold;
+	}
+	.small {
+		@include font(11);
+		vertical-align: top;
+	}
+}
+
+.com-text-02 {
+
+}
+
+.com-link-01 {
+	display: inline-block;
+	color: map-get($colors, blue);
+	font-weight: 300;
+	&:hover {
+		color: map-get($colors, blue);
+		text-decoration: underline;
+	}
+	&.bold {
+		font-weight: bold;
+	}
+}
+/* btn  ボタン
+--------------------------------- */
+.com-btn-01 {
+	display: block;
+	background-color: map-get($colors, sub);
+	color:#000;
+	@include font(22);
+	line-height: 1.5;
+	font-weight: 300;
+	padding: .3em;
+	box-sizing: border-box;
+	max-width: 170px;
+	text-align: center;
+	border-radius: 2px;
+	margin-top: 20px;
+	&.small {
+		@include font(17);
+		max-width: 120px;
+		@include mq-up('m') {
+			@include font(14);
+			max-width: 100px;
+		}
+	}
+	&:hover {
+		background-color: #fcd439;
+	}
+}
+
+/* font-size フォントサイズ
+--------------------------------- */
+@for $i from 10 through 30 {
+	.com-fz-#{$i} {
+		@include font($i);
+	}
+}
+
+/* container
+--------------------------------- */
+.com-container-01 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	@include mq-up('m') {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}
+
+/* list
+--------------------------------- */
+.com-list-01 {
+	padding-left: 1em;
+	li {
+		list-style: disc;
+	}
+}

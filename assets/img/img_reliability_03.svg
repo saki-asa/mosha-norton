@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="160px" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon_Support</title>
+    <defs>
+        <ellipse id="path-1" cx="45.5" cy="45.049505" rx="45.5" ry="45.049505"></ellipse>
+        <filter x="-43.2%" y="-35.9%" width="186.5%" height="187.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1.35148515" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="7" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="11.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Icon_Support" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(35.000000, 34.000000)">
+            <g id="Circle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use stroke="#1D2836" stroke-width="2.7029703" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <path d="M63.1808536,27 L26.8167885,27 C23.0535251,27 20,30.0281832 20,33.7625528 L20,55.0674003 C20,58.8041082 23.0535251,61.8276147 26.8167885,61.8276147 L29.7995756,61.8276147 L29.7995756,71.3237168 C29.7995756,71.6089973 29.9764207,71.8615408 30.2428672,71.9574138 C30.5116718,72.0556251 30.8134874,71.9807974 30.9974063,71.7656678 C33.0252299,69.4296408 37.1445414,64.6850973 39.6250884,61.8276147 L63.1808536,61.8276147 C66.9464749,61.8276147 70,58.8041082 70,55.0674003 L70,33.7625528 C70,30.0281832 66.9464749,27 63.1808536,27" id="Path" fill="#FCC200"></path>
+            <path d="M54.7559538,46.8690911 C53.3907097,46.8690911 52.2801226,45.767721 52.2801226,44.4161457 C52.2801226,43.0598938 53.3907097,41.960862 54.7559538,41.960862 C56.1211978,41.960862 57.231785,43.0598938 57.231785,44.4161457 C57.231785,45.767721 56.1211978,46.8690911 54.7559538,46.8690911" id="Path" fill="#242E39"></path>
+            <path d="M44.998821,46.8690911 C43.6359349,46.8690911 42.5253478,45.767721 42.5253478,44.4161457 C42.5253478,43.0598938 43.6359349,41.960862 44.998821,41.960862 C46.3640651,41.960862 47.4746522,43.0598938 47.4746522,44.4161457 C47.4746522,45.767721 46.3640651,46.8690911 44.998821,46.8690911" id="Path" fill="#242E39"></path>
+            <path d="M35.2464041,46.8690911 C33.8788022,46.8690911 32.770573,45.767721 32.770573,44.4161457 C32.770573,43.0598938 33.8788022,41.960862 35.2464041,41.960862 C36.6092903,41.960862 37.7175195,43.0598938 37.7175195,44.4161457 C37.7175195,45.767721 36.6092903,46.8690911 35.2464041,46.8690911" id="Path" fill="#242E39"></path>
+        </g>
+    </g>
+</svg>
